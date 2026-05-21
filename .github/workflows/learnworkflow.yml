@@ -9,7 +9,7 @@ jobs:
       - name: test job
         run: echo "this is first workflow"
   second-test-job:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: test-job
     steps:
       - name: 2nd test
