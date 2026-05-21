@@ -1,6 +1,6 @@
 name: test workflow
 
-on: workflow_dispatch
+on: push
 
 jobs:
   test-job:
@@ -8,3 +8,9 @@ jobs:
     steps:
       - name: test job
         run: echo "this is first workflow"
+  second-test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 2nd test
+        run: echo "this is 2nd test workflow"
+    
