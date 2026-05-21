@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: test job
         run: echo "this is first workflow"
-        shell: bash
+        shell: pwsh
   second-test-job:
     runs-on: windows-latest
     needs: test-job
